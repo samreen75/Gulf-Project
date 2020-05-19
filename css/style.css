@@ -60,8 +60,97 @@ body {
   background-color: #fff; }
 
 [tabindex="-1"]:focus {
+
   outline: 0 !important; }
 
+  #header-logo img {
+    width: 180px;
+    height: 180px;
+    margin-left: -20px !important;
+    margin-top: -60px;
+  }
+
+  @media screen and (max-width: 768px) {
+  #header-logo img {
+    width: 180px;
+    height: 180px;
+    margin-left: 40px !important;
+    margin-top: -60px;
+    margin-bottom: 20px;
+  }
+  }
+  #space{
+    margin-top: -90px;
+  }
+  @media screen and (max-width: 768px) {
+
+    #space{
+      margin-top: -70px;
+    }
+
+  }
+
+  #testimonies{
+    margin-top: -70px;
+    
+  }
+  @media screen and (max-width: 768px) {
+    #testimonies{
+      margin-top: -70px;
+      
+    }
+  }
+  
+  #space1{
+    margin-top: -100px;
+  }
+
+  @media screen and (max-width: 768px) {}
+
+  #pricing{
+    margin-top: -90px;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+  #pricing{
+    margin-top: -80px;
+    margin-bottom: -80px;
+  }
+  }
+
+  #pricing1{
+    margin-top: -80px;
+    margin-bottom: -120px;
+  }
+  @media screen and (max-width: 768px) {
+    
+  #pricing1{
+    margin-top: -90px;
+    margin-bottom: 60px;
+  }
+  }
+  #pricing2{
+    margin-top: -80px;
+    margin-bottom: 20px;
+  }
+  @media screen and (max-width: 768px) {
+    
+  #pricing2{
+    margin-top: -220px;
+    margin-bottom: 20px;
+  }
+  }
+  #projects{
+    margin-top: -40px;
+    /* margin-bottom: -120px; */
+  }
+  @media screen and (max-width: 768px) {}
+  #footer{
+    margin-top: -60px;
+    margin-bottom: -150px;
+  }
+  @media screen and (max-width: 768px) {}
 hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
@@ -8167,10 +8256,11 @@ h1, h2, h3, h4, h5,
 
 .navbar-brand {
   color: #fff;
+
   font-weight: 800;
   font-size: 22px;
   line-height: 1;
-  margin-bottom: 0px; }
+  margin-bottom: -80px; }
   .navbar-brand span {
     color: #f79f24; }
   .navbar-brand:hover, .navbar-brand:focus {
@@ -8753,8 +8843,16 @@ h1, h2, h3, h4, h5,
 
 #section-counter {
   position: relative;
+  margin-top: -40px;
   z-index: 0; }
 
+  @media screen and (max-width: 768px) {
+  #section-counter {
+    position: relative;
+    margin-top: 20px;
+    
+    z-index: 0; }
+  }
 .ftco-counter {
   overflow-x: hidden;
   position: relative;
