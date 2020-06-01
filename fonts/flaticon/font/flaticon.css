@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 22/02/2020 23:01
+  	Creation date: 29/05/2020 10:57
   	*/
 
 @font-face {
@@ -30,9 +30,15 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-car-service:before { content: "\f100"; }
-.flaticon-battery:before { content: "\f101"; }
-.flaticon-tyre:before { content: "\f102"; }
-.flaticon-tow-truck:before { content: "\f103"; }
-.flaticon-car-engine:before { content: "\f104"; }
-.flaticon-repair:before { content: "\f105"; }
+.flaticon-polisher:before { content: "\f100"; }
+.flaticon-hybrid-car:before { content: "\f101"; }
+.flaticon-car:before { content: "\f102"; }
+.flaticon-car-crash:before { content: "\f103"; }
+.flaticon-clutch:before { content: "\f104"; }
+.flaticon-car-1:before { content: "\f105"; }
+.flaticon-car-check:before { content: "\f106"; }
+.flaticon-car-2:before { content: "\f107"; }
+.flaticon-maintenance:before { content: "\f108"; }
+.flaticon-check:before { content: "\f109"; }
+.flaticon-maintenance-1:before { content: "\f10a"; }
+.flaticon-car-repair:before { content: "\f10b"; }
