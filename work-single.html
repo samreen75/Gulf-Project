@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+      <p>Some Other Page Content</p>
+      <div id="modal-section">
+          <p>
+		  This method is a little better for seo then creating snippets and if a search engine indexes your site they can index your modals content and when people link to it there will be a full page for them to see. They still will not associate your modals content with the original page but they will follow the link and index the pages individually.
+		  </p>
+		  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo">Open modal for @mdo</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2" data-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal3" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+		  
+		  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">phone:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">email:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal " id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New chat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">education:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">work experience:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+       
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	  
+	 <script> 
+	  $('#exampleModal1').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+  $('#exampleModal2').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+
+  $('#exampleModal3').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('New message to ' + recipient)
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
+	  
+</body>
+</html>
+
+
+
+
+              <!-- <button class="btn btn-primary" data-target="#myModal" id="modalBtn">Car Customization</button> &nbsp; &nbsp;
+              <button class="btn btn-primary" data-target="#myModal2" id="modalBtn">Car Restoration</button>
+           -->
+              <!-- The Modal -->
+              <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"></div> -->
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <h3 style="color:brown;">Car Customization</h3>
+                    <p>
+                      Car customization is an area of automotive repair that changes
+                       some portion of a car for an intended purpose. Vehicle customization 
+                       may be as simple as adding new wheels and installing a new stereo system,
+                        or it may involve a complete overhaul of a vehicle to rebuild the engine
+                         and body from the ground up.
+  
+                    </p>
+                    <div class="container">
+                      <div class="row">
+  
+                      
+                        <div id="car1">
+  
+                            <button class= "openbtn" onclick="openCar1()" >car service</button>
+  
+                             
+                              <div class=" sidebar ftco-animate"  id="mySideCar1">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeCar1()">×</a>
+                              <p>In this project we cleaned car painted beautifully.</p>
+                               <div class="work-project img d-flex align-items-end" style="background-image: url(images/garage-2.jpg);">
+                                 <a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                                   <span class="fa fa-expand"></span>
+                                 </a>
+                                 <a href="images/garage-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                <a href="images/garage-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                               </div>
+                              </div>
+                            </div>
+                            <div class ="separator"></div>
+  
+                            <div id="car2" >
+                              <button class= "openbtn" onclick="openCar2()" >car Painting</button>
+                              <div class=" sidebar ftco-animate"  id="mySideCar2">
+                                  <a href="javascript:void(0)" class="closebtn" onclick="closeCar2()">×</a>
+  
+                                <p>In this project we cleaned car painted beautifully.</p>
+                                  
+                           
+                              <div class=" work-project img d-flex align-items-end" style="background-image: url(images/work-4.jpg);">
+                                <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                
+                                <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                
+                                <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                              </div>
+                               </div>
+                            </div>
+                            <div class ="separator"></div>
+  
+                              <div id="car3">
+                                <button class= "openbtn" onclick="openCar3()" >Air filter change</button>
+  
+                                <div class=" sidebar ftco-animate"  id="mySideCar3">
+                                  <a href="javascript:void(0)" class="closebtn" onclick="closeCar3()">×</a>
+  
+                                <p>In this project we cleaned car painted beautifully.</p>
+  
+                                <div class=" work-project img d-flex align-items-end" style="background-image: url(images/garage-1.jpg);">
+                                  <a href="images/work-6.jpg" class=" work-project icon image-popup2 d-flex justify-content-center align-items-center" >
+                                    <span class="fa fa-expand"></span>
+                                  </a>
+                                  <a href="images/work-7.jpg" class="work-project icon image-popup2 d-flex justify-content-center align-items-center">
+                                    <span class="fa fa-expand"></span>
+                                  </a>
+                                  <a href="images/work-8.jpg" class="icon image-popup2 d-flex justify-content-center align-items-center">
+                                    <span class="fa fa-expand"></span>
+                                  </a>
+                                </div>
+                               </div>
+  
+                            </div>
+                            <div class ="separate"></div>
+                            <div id="car4" >
+                              <button class= "openbtn" onclick="openCar4()" >Extensive brake inspection</button>
+  
+                              <div class=" sidebar ftco-animate"  id="mySideCar4">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeCar4()">×</a>
+  
+                                <p>In this project we cleaned car painted beautifully.</p>
+                                  
+                           
+                              <div class=" work-project img d-flex align-items-end" style="background-image: url(images/work-4.jpg);">
+                                <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                
+                                <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                
+                                <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                              </div>
+                               </div>
+                            </div>
+  
+  <div class ="separate"></div> <br>
+  
+                            <div id="car5">
+                              <button class= "openbtn" onclick="openCar5()" >Air conditioning system inspection.</button>
+                              <div class=" sidebar ftco-animate"  id="mySideCar5">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeCar5()">×</a>
+  
+                                <p>In this project we cleaned car painted beautifully.</p>
+                                  
+                           
+                              <div class=" work-project img d-flex align-items-end" style="background-image: url(images/garage.jpg);">
+                                <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                
+                                <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                                
+                                <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                  <span class="fa fa-expand"></span>
+                                </a>
+                              </div>
+                               </div>
+                            </div>
+  
+  
+                         
+                      </div>
+                      
+  
+                      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <!-- <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"></div> -->
+                          <!-- Modal content -->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+  
+  
+                      <!-- <div class="modal " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                
+                       
+                        <div class="modal-content">
+                          <span class="close" >&times;</span> -->
+                          <h3 style="color:brown;">Car Customization</h3>
+                          <p>
+                            Car customization is an area of automotive repair that changes
+                             some portion of a car for an intended purpose. Vehicle customization 
+                             may be as simple as adding new wheels and installing a new stereo system,
+                              or it may involve a complete overhaul of a vehicle to rebuild the engine
+                               and body from the ground up.
+        
+                          </p>
+                          <div class="container">
+                            <div class="row">
+        
+                            
+                              <div id="car1">
+        
+                                  <button class= "openbtn" onclick="openCar1()" >car service</button>
+        
+                                   
+                                    <div class=" sidebar ftco-animate"  id="mySideCar1">
+                                      <a href="javascript:void(0)" class="closebtn" onclick="closeCar1()">×</a>
+                                    <p>In this project we cleaned car painted beautifully.</p>
+                                     <div class="work-project img d-flex align-items-end" style="background-image: url(images/garage-2.jpg);">
+                                       <a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                                         <span class="fa fa-expand"></span>
+                                       </a>
+                                       <a href="images/garage-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      <a href="images/garage-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                     </div>
+                                    </div>
+                                  </div>
+                                  <div class ="separator"></div>
+        
+                                  <div id="car2" >
+                                    <button class= "openbtn" onclick="openCar2()" >car Painting</button>
+                                    <div class=" sidebar ftco-animate"  id="mySideCar2">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeCar2()">×</a>
+        
+                                      <p>In this project we cleaned car painted beautifully.</p>
+                                        
+                                 
+                                    <div class=" work-project img d-flex align-items-end" style="background-image: url(images/work-4.jpg);">
+                                      <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      
+                                      <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      
+                                      <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                    </div>
+                                     </div>
+                                  </div>
+                                  <div class ="separator"></div>
+        
+                                    <div id="car3">
+                                      <button class= "openbtn" onclick="openCar3()" >Air filter change</button>
+        
+                                      <div class=" sidebar ftco-animate"  id="mySideCar3">
+                                        <a href="javascript:void(0)" class="closebtn" onclick="closeCar3()">×</a>
+        
+                                      <p>In this project we cleaned car painted beautifully.</p>
+        
+                                      <div class=" work-project img d-flex align-items-end" style="background-image: url(images/garage-1.jpg);">
+                                        <a href="images/work-6.jpg" class=" work-project icon image-popup2 d-flex justify-content-center align-items-center" >
+                                          <span class="fa fa-expand"></span>
+                                        </a>
+                                        <a href="images/work-7.jpg" class="work-project icon image-popup2 d-flex justify-content-center align-items-center">
+                                          <span class="fa fa-expand"></span>
+                                        </a>
+                                        <a href="images/work-8.jpg" class="icon image-popup2 d-flex justify-content-center align-items-center">
+                                          <span class="fa fa-expand"></span>
+                                        </a>
+                                      </div>
+                                     </div>
+                                   </div>
+                                  <div class ="separate"></div>
+                                  <div id="car4" >
+                                    <button class= "openbtn" onclick="openCar4()" >Extensive brake inspection</button>
+        
+                                    <div class=" sidebar ftco-animate"  id="mySideCar4">
+                                      <a href="javascript:void(0)" class="closebtn" onclick="closeCar4()">×</a>
+        
+                                      <p>In this project we cleaned car painted beautifully.</p>
+                                        
+                                 
+                                    <div class=" work-project img d-flex align-items-end" style="background-image: url(images/work-4.jpg);">
+                                      <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      
+                                      <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      
+                                      <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                    </div>
+                                     </div>
+                                  </div>
+        
+        <div class ="separate"></div> <br>
+        
+                                  <div id="car5">
+                                    <button class= "openbtn" onclick="openCar5()" >Air conditioning system inspection.</button>
+                                    <div class=" sidebar ftco-animate"  id="mySideCar5">
+                                      <a href="javascript:void(0)" class="closebtn" onclick="closeCar5()">×</a>
+        
+                                      <p>In this project we cleaned car painted beautifully.</p>
+                                        
+                                 
+                                    <div class=" work-project img d-flex align-items-end" style="background-image: url(images/garage.jpg);">
+                                      <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      
+                                      <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                      
+                                      <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                        <span class="fa fa-expand"></span>
+                                      </a>
+                                    </div>
+                                     </div>
+                                  </div>
+        
+        
+                               
+                            </div>
+                            
+        
+        
+  
+  
+                    </div>
+  
+                  </div>
+                
+                
+  
+                </div>
+  
+  
+              </div>
+  
+          </div>
+          </div>
+  
+  
+      </section>
+  
+  
+      
+      <div class="modal fade " id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Car customization is an area of automotive repair that changes
+                 some portion of a car for an intended purpose. Vehicle customization 
+                 may be as simple as adding new wheels and installing a new stereo system,
+                  or it may involve a complete overhaul of a vehicle to rebuild the engine
+                   and body from the ground up.
+
+              </p>
+
+            <div class="container">
+                <div class="row">
+                  <div id="car6">
+                          <button class= "openbtn" onclick="openCar6()" >car service</button>
+                      <div class=" sidebar ftco-animate"  id="mySideCar6">
+                          <a href="javascript:void(0)" class="closebtn" onclick="closeCar6()">×</a>
+                           <p>In this project we cleaned car painted beautifully.</p>
+                         <div class="work-project img d-flex align-items-end" style="background-image: url(images/garage-2.jpg);">
+                           <a href="images/work-7.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                             <span class="fa fa-expand"></span>
+                           </a>
+                           <a href="images/garage-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                           </a>
+                           <a href="images/garage-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                           </a>
+                         </div>
+                        </div>
+                   </div>
+
+                           <div class ="separator"></div>
+
+                          <div id="car7" >
+                            <button class= "openbtn" onclick="openCar7()" >car Painting</button>
+                            <div class=" sidebar ftco-animate"  id="mySideCar7">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeCar7()">×</a>
+
+                              <p>In this project we cleaned car painted beautifully.</p>
+                                
+                         
+                            <div class=" work-project img d-flex align-items-end" style="background-image: url(images/work-4.jpg);">
+                              <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                                <span class="fa fa-expand"></span>
+                              </a>
+                              <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                                <span class="fa fa-expand"></span>
+                              </a>
+                              <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                <span class="fa fa-expand"></span>
+                              </a>
+                              
+                              <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                <span class="fa fa-expand"></span>
+                              </a>
+                              
+                              <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                                <span class="fa fa-expand"></span>
+                              </a>
+                            </div>
+                             </div>
+                          </div>
+                          <div class ="separator"></div>
+
+               </div>  
+             </div>  
+             </div>
+
+             <div id="car8">
+              <button class= "openbtn" onclick="openCar8()" >Air filter change</button>
+
+              <div class=" sidebar ftco-animate"  id="mySideCar8">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCar8()">×</a>
+
+              <p>In this project we cleaned car painted beautifully.</p>
+
+              <div class=" work-project img d-flex align-items-end" style="background-image: url(images/garage-1.jpg);">
+                <a href="images/work-6.jpg" class=" work-project icon image-popup2 d-flex justify-content-center align-items-center" >
+                  <span class="fa fa-expand"></span>
+                </a>
+                <a href="images/work-7.jpg" class="work-project icon image-popup2 d-flex justify-content-center align-items-center">
+                  <span class="fa fa-expand"></span>
+                </a>
+                <a href="images/work-8.jpg" class="icon image-popup2 d-flex justify-content-center align-items-center">
+                  <span class="fa fa-expand"></span>
+                </a>
+              </div>
+             </div>
+           </div>
+          <div class ="separate"></div>
+          <div id="car9" >
+            <button class= "openbtn" onclick="openCar9()" >Extensive brake inspection</button>
+
+            <div class=" sidebar ftco-animate"  id="mySideCar9">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeCar9()">×</a>
+
+              <p>In this project we cleaned car painted beautifully.</p>
+                
+         
+            <div class=" work-project img d-flex align-items-end" style="background-image: url(images/work-4.jpg);">
+              <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                <span class="fa fa-expand"></span>
+              </a>
+              <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+              <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+              
+              <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+              
+              <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+            </div>
+             </div>
+          </div>
+
+<div class ="separate"></div> <br>
+
+          <div id="car10">
+            <button class= "openbtn" onclick="openCar10()" >Air conditioning system inspection.</button>
+            <div class=" sidebar ftco-animate"  id="mySideCar10">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeCar10()">×</a>
+
+              <p>In this project we cleaned car painted beautifully.</p>
+                
+         
+            <div class=" work-project img d-flex align-items-end" style="background-image: url(images/garage.jpg);">
+              <a href="images/work-1.jpg" class=" work-project icon image-popup1 d-flex justify-content-center align-items-center" >
+                <span class="fa fa-expand"></span>
+              </a>
+              <a href="images/work-2.jpg" class="work-project icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+              <a href="images/work-3.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+              
+              <a href="images/work-4.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+              
+              <a href="images/work-5.jpg" class="icon image-popup1 d-flex justify-content-center align-items-center">
+                <span class="fa fa-expand"></span>
+              </a>
+            </div>
+             </div>
+          </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             
+            </div>
+          </div>
+        </div>
+     </div>
+     

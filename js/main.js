@@ -46,13 +46,13 @@
 	    items: 1,
 	    navText : ["<span class='ion-ios-arrow-back'></span>","<span class='ion-ios-arrow-forward'></span>"],
 	    responsive:{
-	      0:{
+	     90000:{
 	        items:1
 	      },
-	      600:{
+	      80000:{
 	        items:1
 	      },
-	      1000:{
+	      20000:{
 	        items:1
 	      }
 	    }
@@ -127,6 +127,49 @@
     }
   });
 
+  	// magnific popup
+	$('.image-popup1').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		 gallery: {
+		  enabled: true,
+		  navigateByImgClick: true,
+		  preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+		  verticalFit: true
+		},
+		zoom: {
+		  enabled: true,
+		  duration: 300 // don't foget to change the duration also in CSS
+		}
+	  });
+
+		  // magnific popup
+		  
+	$('.image-popup2').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		 gallery: {
+		  enabled: true,
+		  navigateByImgClick: true,
+		  preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+		  verticalFit: true
+		},
+		zoom: {
+		  enabled: true,
+		  duration: 300 // don't foget to change the duration also in CSS
+		}
+	  });
+
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,
     type: 'iframe',
@@ -200,6 +243,104 @@
 	};
 	contentWayPoint();
 
+
+// 	var modal = document.getElementById("myModal");
+
+// // Get the button that opens the modal
+// var btn = document.getElementById("modalBtn");
+
+// // Get the <span> element that closes the modal
+// var span = document.getElementsByClassName("close")[0];
+
+// // When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// // When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     modal.style.display = "none";
+//   }
+// }
+
+
+$('#exampleModal1').on('show.bs.modal', function (event) {
+	var button = $(event.relatedTarget) // Button that triggered the modal
+	var recipient = button.data('whatever') // Extract info from data-* attributes
+	// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+	// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+	var modal = $(this)
+	modal.find('.modal-title').text('New message to ' + recipient)
+	modal.find('.modal-body input').val(recipient)
+  });
+  
+	$('#exampleModal2').on('show.bs.modal', function (event) {
+	var button = $(event.relatedTarget) // Button that triggered the modal
+	var recipient = button.data('whatever') // Extract info from data-* attributes
+	// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+	// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+	var modal = $(this)
+	modal.find('.modal-title').text('New message to ' + recipient)
+	modal.find('.modal-body input').val(recipient)
+  });
+
+
+  function getCourse(courseId){
+	var id =document.getElementById(courseId);
+	alert("id-fgfghfd->"+id.id)
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+  }
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+// alert("gfffffffffffh22222222222222222-------------"+i);
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function getCourse(courseId) {
+    this.classList.toggle("active");
+    
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+	  content.style.maxHeight = content.scrollHeight + "px";
+	  
+    } 
+  });
+}
+
+function openNav() {
+	document.getElementById("mySidebar").style.width = "250px";
+	document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+	document.getElementById("mySidebar").style.width = "0";
+	document.getElementById("main").style.marginLeft= "0";
+  }
+  
+   
+
+// jQuery(document).ready(function()
+// { window.Lightbox = new jQuery().visualLightbox({
+// 	autoPlay:true,
+// 	borderSize:39,
+// 	classNames:'vlightbox1',
+// 	descSliding:true,
+// 	enableRightClick:false,
+// 	enableSlideshow:true,
+// 	resizeSpeed:7,
+// 	slideTime:4,
+// 	startZoom:true}) });
 
 	$('.appointment_date').datepicker({
 	  'format': 'm/d/yyyy',

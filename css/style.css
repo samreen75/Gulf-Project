@@ -1,3 +1,5 @@
+
+  
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -102,24 +104,23 @@ body {
       color: #fff;
     
      }
-
-  #header-logo img {
-    width: 300px;
-    height: 125px;
-    margin-left: -100px !important;
-    margin-top: -60px;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: 768px) {
-  #header-logo img {
-    width: 200px;
-    height: 180px;
-    margin-left: 60px !important;
-    margin-top: -60px;
-    margin-bottom: 20px;
-  }
-  }
+     #header-logo img {
+      width: 280px;
+      height: 80px;
+      margin-left: -100px !important;
+      margin-top: -60px;
+      margin-bottom: 20px;
+    }
+  
+    @media screen and (max-width: 768px) {
+    #header-logo img {
+      width: 180px;
+      height: 80px;
+      margin-left: 100px !important;
+      margin-top: -20px;
+      margin-bottom: 50px;
+    }
+    }
   #space{
     margin-top: -90px;
   }
