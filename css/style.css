@@ -233,7 +233,7 @@ body {
   }
   }
   #pricing2{
-    margin-top: -80px;
+    margin-top: -200px;
     margin-bottom: 20px;
   }
   @media screen and (max-width: 768px) {
@@ -9198,7 +9198,7 @@ h1, h2, h3, h4, h5,
       -webkit-transform: translate(50%, 50%);
       -ms-transform: translate(50%, 50%);
       transform: translate(50%, 50%);
-      margin-top: -70px;
+      margin-top: 30px;
       opacity: 0;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -9426,7 +9426,11 @@ textarea.form-control {
   .footer .ftco-footer-widget ul li a {
     color: #fff; }
     .footer .ftco-footer-widget ul li a span {
+      margin-right: 80px;
       color: #fff; }
+     #footer-address{
+margin-right: 120px;
+     }
     .footer .ftco-footer-widget ul li a:hover {
       color: #f79f24; }
       .footer .ftco-footer-widget ul li a:hover span {
@@ -9828,10 +9832,12 @@ textarea.form-control {
   margin: 0; }
   .block-27 ul li {
     display: inline-block;
+    margin-right: 80px;
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
       color: gray;
+     
       text-align: center;
       display: inline-block;
       width: 40px;
@@ -9843,7 +9849,9 @@ textarea.form-control {
       background: #f79f24;
       color: #fff;
       border: 1px solid transparent; }
+#email{
 
+}
 .wrapper {
   width: 100%;
   -webkit-box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18);

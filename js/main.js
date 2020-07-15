@@ -127,12 +127,9 @@
     }
   });
 
-<<<<<<< HEAD
-  	// magnific popup
-	$('.image-popup1').magnificPopup({
   // flaticon popup
 	$('.image-popup-mechanic-section').magnificPopup({
->>>>>>> aef88abaeb9c9f3598bb9be03399204d0d7b23e9
+//  aef88abaeb9c9f3598bb9be03399204d0d7b23e9
 		type: 'image',
 		closeOnContentClick: true,
 		closeBtnInside: false,
@@ -152,13 +149,12 @@
 		}
 	  });
 
-<<<<<<< HEAD
+
 		  // magnific popup
 		  
-	$('.image-popup2').magnificPopup({
-=======
+
 	$('.image-popup-computerized-diagnostics').magnificPopup({
->>>>>>> aef88abaeb9c9f3598bb9be03399204d0d7b23e9
+
 		type: 'image',
 		closeOnContentClick: true,
 		closeBtnInside: false,
@@ -178,8 +174,7 @@
 		}
 	  });
 
-<<<<<<< HEAD
-=======
+
 	$('.image-popup-painting-denting').magnificPopup({
 		type: 'image',
 		closeOnContentClick: true,
@@ -382,7 +377,6 @@
 	  
 	  
 
->>>>>>> aef88abaeb9c9f3598bb9be03399204d0d7b23e9
   $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
     disableOn: 700,
     type: 'iframe',
