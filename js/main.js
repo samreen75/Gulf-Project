@@ -130,7 +130,6 @@
 <<<<<<< HEAD
   	// magnific popup
 	$('.image-popup1').magnificPopup({
-=======
   // flaticon popup
 	$('.image-popup-mechanic-section').magnificPopup({
 >>>>>>> aef88abaeb9c9f3598bb9be03399204d0d7b23e9
