@@ -144,11 +144,13 @@ body {
   }
   #owl-carousel {
     background-size: cover;
-    /* width: 1350px; */
+ 
     height: 700px;
-    /* margin-left: 60px !important; */
-    /* margin-top: -60px; */
-    /* margin-bottom: 20px; */
+ 
+  }
+  #about-img{
+    background-size: cover;
+    height:700px;
   }
   #text{
     padding-top: 400px;
@@ -251,6 +253,10 @@ body {
   #footer{
     margin-top: -60px;
     margin-bottom: -150px;
+  }
+  #footer-map{
+    margin-top: -40px;
+    margin-bottom: -80px;
   }
   @media screen and (max-width: 768px) {}
 hr {
@@ -9625,7 +9631,7 @@ margin-right: 120px;
 .testimony-wrap {
   display: block;
   position: relative;
-  overflow: hidden;
+ 
   background: white;
   padding: 0 20px;
   border-radius: 5px;
