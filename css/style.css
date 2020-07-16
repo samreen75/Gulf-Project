@@ -9625,6 +9625,7 @@ margin-right: 120px;
 .testimony-wrap {
   display: block;
   position: relative;
+  overflow: hidden;
   background: white;
   padding: 0 20px;
   border-radius: 5px;
@@ -9851,6 +9852,9 @@ margin-right: 120px;
       border: 1px solid transparent; }
 #email{
 
+}
+#photo{
+  margin-left: 20px;
 }
 .wrapper {
   width: 100%;
