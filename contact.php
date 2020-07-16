@@ -3,7 +3,7 @@
 $name = $_REQUEST['name'];
 $name = $_REQUEST['email'];
 $name = $_REQUEST['subject'];
-$name = $_REQUEST['message'];
+$name = $_REQUEST['message']; 
 
 //check fields
 if(empty($name) || empty($email) empty($subject))
