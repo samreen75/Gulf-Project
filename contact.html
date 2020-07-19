@@ -54,7 +54,7 @@
 							<div class="col-md-3 d-flex justify-content-end align-items-center">
 								<div class="social-media">
 					    		<p class="mb-0 d-flex">
-					    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+					    			<a href="https://www.facebook.com/Altlmsani-Workshop-101324245001858/?modal=admin_todo_tour" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
 					    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
 					    			<a href="https://instagram.com/altlmsani_center?igshid=qeb0f1nu1bza" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 					    			<!-- <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> -->
@@ -82,7 +82,7 @@
 	        	<!-- <li class="nav-item"><a href="project.html" class="nav-link" >Project</a></li> -->
 	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 			  <li class="nav-item active"><a href="contact.html" class="nav-link" >Contact</a></li>
-			  <div id="google_translate_element" style="font-size: 16px; padding-top: 12px; padding-left: 450px;"></div>
+			  <div id="google_translate_element" id="translator"></div>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -96,21 +96,22 @@ function googleTranslateElementInit() {
 	    </div>
 	  </nav>
     <!-- END nav -->
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/Cover-8.jpg');" data-stellar-background-ratio="0.5"id="about-img">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/Cover-8.jpg');" id="about-img">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
           <div class="col-md-9 ftco-animate pb-5">
-          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Contact us <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-0 bread">Contact us</h1>
+			<p  id="contact-text">
+				<span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span>
+				 <span>Contact <i class="fa fa-chevron-right"></i></span></p>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="ftco-section bg-light">
-    	<div class="container">
+    <section class="ftco-section bg-light" >
+    	<div class="container" id="contact-touch">
     		<div class="row justify-content-center">
 					<div class="col-md-12">
 						<div class="wrapper">
@@ -150,7 +151,7 @@ function googleTranslateElementInit() {
 										</form>
 									</div>
 								</div>
-								<div class="col-md-5 d-flex align-items-stretch">
+								<div class="col-md-5 d-flex align-items-stretch" id="contact-map">
 									<div class="info-wrap bg-primary w-100 p-lg-5 p-4">
 										<h3 class="mb-4 mt-md-4">Contact us</h3>
 					        	<div class="dbox w-100 d-flex align-items-start">
@@ -166,7 +167,7 @@ function googleTranslateElementInit() {
 					        			<span class="fa fa-phone"></span>
 					        		</div>
 					        		<div class="text pl-3">
-						            <p><span>Phone:</span> <a href="tel://1234567920">+966 580222230/+966 581446364</a></p>
+						            <p><span>Phone:</span> <a href="tel://1234567920">+966 580222230 <br>+966 581446364</a></p>
 						          </div>
 					          </div>
 					        	<div class="dbox w-100 d-flex align-items-center">
@@ -206,8 +207,10 @@ function googleTranslateElementInit() {
 							var to = d.getElementsByTagName('script')[0];
 							to.parentNode.insertBefore(s, to);
 						  })();</script><a href="https://1map.com/map-embed">Map</a></div> -->
-						  <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Alttelmesani,Ibn%20sina,%20Al%20Khobar%2034627,%20Saudi%20Arabia+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="1110" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-					</div>
+						  <!-- <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Alttelmesani,Ibn%20sina,%20Al%20Khobar%2034627,%20Saudi%20Arabia+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="1110" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+						  <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Alttelmesani,Ibn%20sina,%20Al%20Khobar%2034627,%20Saudi%20Arabia+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
+				
+						</div>
 
 				</div>
     	</div>
@@ -220,10 +223,10 @@ function googleTranslateElementInit() {
 			<div class="col-md-6 col-lg">
 			  <div class="ftco-footer-widget mb-4" >
 				<h2 class="logo"><a href="#">AL TLMSANI<span>.</span></a></h2>
-				<p>One stop for all auto services</p>
+				<p id="word">One stop for all auto services</p>
 				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
 				  <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-				  <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+				  <li class="ftco-animate"><a href="https://www.facebook.com/Altlmsani-Workshop-101324245001858/?modal=admin_todo_tour"><span class="fa fa-facebook"></span></a></li>
 				  <li class="ftco-animate"><a href="https://instagram.com/altlmsani_center?igshid=qeb0f1nu1bza"><span class="fa fa-instagram"></span></a></li>
 				</ul>
 			  </div>
@@ -277,10 +280,32 @@ function googleTranslateElementInit() {
 		</div>
 	  </footer>
     
-  
+  	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+ 
+ <script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
 
 
   <script src="js/jquery.min.js"></script>

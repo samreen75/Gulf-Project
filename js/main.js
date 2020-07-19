@@ -32,6 +32,53 @@
 		}, 1);
 	};
 	loader();
+	
+
+	var goToTop = function() {
+
+		$('.js-gotop').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top').addClass('active');
+			} else {
+				$('.js-top').removeClass('active');
+			}
+
+		});
+	
+	};
+
+	var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
 
   var carousel = function() {
 		$('.home-slider').owlCarousel({
@@ -105,6 +152,94 @@
 	$('#dropdown04').on('show.bs.dropdown', function () {
 	  console.log('show');
 	});
+
+		// magnific popup for bentley
+		$('.image-popup-bentley').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			closeBtnInside: false,
+			fixedContentPos: true,
+			mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+			 gallery: {
+			  enabled: true,
+			  navigateByImgClick: true,
+			  preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+			  verticalFit: true
+			},
+			zoom: {
+			  enabled: true,
+			  duration: 300 // don't foget to change the duration also in CSS
+			}
+		  });
+	
+
+		// magnific popup for audi
+		$('.image-popup-audi').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			closeBtnInside: false,
+			fixedContentPos: true,
+			mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+			 gallery: {
+			  enabled: true,
+			  navigateByImgClick: true,
+			  preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+			  verticalFit: true
+			},
+			zoom: {
+			  enabled: true,
+			  duration: 300 // don't foget to change the duration also in CSS
+			}
+		  });
+	
+	
+		// magnific popup for Lexus
+		$('.image-popup-lexus').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			closeBtnInside: false,
+			fixedContentPos: true,
+			mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+			 gallery: {
+			  enabled: true,
+			  navigateByImgClick: true,
+			  preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+			},
+			image: {
+			  verticalFit: true
+			},
+			zoom: {
+			  enabled: true,
+			  duration: 300 // don't foget to change the duration also in CSS
+			}
+		  });
+	
+	
+	// magnific popup for volkswagen
+	$('.image-popup-volks').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		closeBtnInside: false,
+		fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		 gallery: {
+		  enabled: true,
+		  navigateByImgClick: true,
+		  preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+		  verticalFit: true
+		},
+		zoom: {
+		  enabled: true,
+		  duration: 300 // don't foget to change the duration also in CSS
+		}
+	  });
+
 
 	// magnific popup
 	$('.image-popup').magnificPopup({

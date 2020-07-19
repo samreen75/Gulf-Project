@@ -55,7 +55,7 @@
 							<div class="col-md-3 d-flex justify-content-end align-items-center">
 								<div class="social-media">
 					    		<p class="mb-0 d-flex">
-					    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+					    			<a href="https://www.facebook.com/Altlmsani-Workshop-101324245001858/?modal=admin_todo_tour" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
 					    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">telmesani1</i></span></a>
 					    			<a href="https://instagram.com/altlmsani_center?igshid=qeb0f1nu1bza" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 					    			<!-- <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> -->
@@ -83,7 +83,7 @@
 	        	<!-- <li class="nav-item"><a href="project.html" class="nav-link" >Project</a></li> -->
 	        	<!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 			  <li class="nav-item"><a href="contact.html" class="nav-link" >Contact</a></li>
-			  <div id="google_translate_element" style="font-size: 16px; padding-top: 12px; padding-left: 450px;"></div>
+			  <div id="google_translate_element" id="translator"></div>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -103,23 +103,27 @@ function googleTranslateElementInit() {
 	    </div>
 	  </nav>
     <!-- END nav -->
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/Cover7.jpg');" data-stellar-background-ratio="0.5" id="about-img">
-      <div class="overlay"></div>
+    <!-- <section class="hero-wrap hero-wrap-2" style="background-image: url('images/Cover7.jpg');" data-stellar-background-ratio="0.5" id="about-img"> -->
+	 
+		<section class="hero-wrap hero-wrap-2" style="background-image: url('images/Cover7.jpg');" id="about-img">
+			<div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end">
-          <div class="col-md-9 ftco-animate pb-5" id="text">
-          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-0 bread" >About Us</h1>
+          <div class="col-md-9 ftco-animate pb-5" >
+			  <p  id="about-text">
+				  <span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span>
+				<span>About us <i class="fa fa-chevron-right"></i></span></p>
+            <!-- <h2 class="mb-0 bread" id="about-text" >TAKE CARE OF YOUR CAR IN THE GARAGE AND THE CAR WILL TAKE CARE OF YOU ON THE ROAD.</h2> -->
           </div>
         </div>
       </div>
     </section>
-		
+
    	
 	<section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
     	<div class="container">
     		<div class="row d-flex no-gutters">
-    			<div class="col-md-6 d-flex">
+    			<div class="col-md-6 d-flex" id="welcome">
     				<!-- <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center mb-4 mb-sm-0" style="background-image:url(images/about.jpg);">
     					<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
     						<span class="fa fa-play"></span>
@@ -294,7 +298,7 @@ function googleTranslateElementInit() {
     </section> -->
 
     <section class="ftco-section testimony-section bg-light">
-		<div class="container"  id="testimonies">
+		<div class="container"  id="testimonies-about">
 		  <div class="row justify-content-center pb-5 mb-3">
 			<div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
 				<span class="subheading">Testimonies</span>
@@ -303,7 +307,7 @@ function googleTranslateElementInit() {
 		  </div>
 		  <div class="row ftco-animate">
 			<div class="col-md-12">
-			  <div class="carousel-testimony owl-carousel ftco-owl">
+			  <div class="carousel-testimony owl-carousel ftco-owl" id="testimony-item">
 				<div class="item">
 				  <div class="testimony-wrap py-4">
 					  <div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></span></div>
@@ -375,16 +379,16 @@ function googleTranslateElementInit() {
 	  </section>
 
 
-	<footer class="footer ftco-section">
-		<div class="container"  id="footer">
+	<footer class="footer ftco-section" >
+		<div class="container" id="footer" >
 		  <div class="row mb-5">
 			<div class="col-md-6 col-lg">
 			  <div class="ftco-footer-widget mb-4" >
 				<h2 class="logo"><a href="#">AL TLMSANI<span>.</span></a></h2>
-				<p>One stop for all auto services</p>
+				<p id="word">One stop for all auto services</p>
 				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
 				  <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-				  <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+				  <li class="ftco-animate"><a href="https://www.facebook.com/Altlmsani-Workshop-101324245001858/?modal=admin_todo_tour"><span class="fa fa-facebook"></span></a></li>
 				  <li class="ftco-animate"><a href="https://instagram.com/altlmsani_center?igshid=qeb0f1nu1bza"><span class="fa fa-instagram"></span></a></li>
 				</ul>
 			  </div>
@@ -431,17 +435,36 @@ function googleTranslateElementInit() {
 			  </div>
 			</div>
 		  </div>
-		  <!-- <div class="row">
-			<div class="col-md-12 text-center" id="footer">
-			</div>
-		  </div> -->
+		  
 		</div>
+		
 	  </footer>
-    
-  
+	  <footer style="text-align:center; color:black;">&copy; Copyright 2020 lwtce.com</footer>
+  	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+	
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+	
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	  } else {
+		mybutton.style.display = "none";
+	  }
+	}
+	
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
 
 
   <script src="js/jquery.min.js"></script>
@@ -460,7 +483,8 @@ function googleTranslateElementInit() {
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-  <footer style="text-align:center; color:black;">&copy; Copyright 2020 lwtce.com</footer>
+
+  
     
   </body>
 </html>

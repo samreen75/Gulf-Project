@@ -81,6 +81,79 @@ body {
   outline: 0 !important; }
 
 
+  #google_translate_element{
+     
+   padding-top:15px;
+   
+    /* padding-right:1100px; */
+    /* scroll-margin-left: 50px; */
+  }
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.gototop.active {
+  opacity: 1;
+  visibility: visible;
+}
+.gototop a {
+  width: 50px;
+  height: 50px;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+}
+.gototop a i {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.gototop a:hover, .gototop a:active, .gototop a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#f79f24; 
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: black;
+}
+
+#word{
+
+}
+  #contact-touch{
+    margin-top: -80px;
+    margin-bottom: -10px;
+
+  }
+
   .area .icon{
     margin: 0 auto;
     width: 130px;
@@ -112,50 +185,125 @@ body {
       margin-bottom: 20px;
     }
   
+    #about-text{
+      color:#fff;
+      font-size: 22px;
+      margin-bottom:-280px;
+      font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    #service-text{
+      color:#fff;
+      font-size: 22px;
+      margin-bottom:-280px;
+      font-family: 'Times New Roman', Times, serif;
+      
+    }
+
+    #contact-text{
+      color:#fff;
+      font-size: 22px;
+      margin-bottom:-280px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
     @media screen and (max-width: 768px) {
     #header-logo img {
       width: 180px;
-      height: 80px;
+      height: 60px;
       margin-left: 100px !important;
       margin-top: -20px;
-      margin-bottom: 50px;
+      margin-bottom: 90px;
     }
+    #contact-touch{
+      margin-top: -80px;
+      margin-bottom: -10px;
+    }
+    #contact-map{
+      margin-top: -20px;
+      margin-bottom: 30px;
+    }
+    
+
+    #word{
+  margin-top: -20px;
+    }
+    #about-text{
+      color:#fff;
+      font-size: 18px;
+      margin-top:-140px;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    #service-text{
+      color:#fff;
+      font-size: 18px;
+      margin-top:-220px;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+    #contact-text{
+      color:#fff;
+      font-size: 18px;
+      margin-top:-140px;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
     }
   #space{
     margin-top: -90px;
+  }
+  #space-service{
+    margin-top: -90px;
+    margin-bottom: -90px;
   }
   @media screen and (max-width: 768px) {
 
     #space{
       margin-top: -300px;
     }
-
+    #space-service{
+      margin-top: -70px;
+      /* margin-bottom: -90px; */
+      
+    }
   }
 
   #testimonies{
     margin-top: -70px;
     
   }
+  #testimonies-about{
+    margin-top: -70px;
+    margin-bottom: -100px;
+  }
   @media screen and (max-width: 768px) {
     #testimonies{
       margin-top: -70px;
-      
+    
     }
+    #testimonies-about{
+    margin-top: -70px;
+    margin-bottom: -80px;
+  }
   }
   #owl-carousel {
     background-size: cover;
- 
     height: 700px;
  
   }
   #about-img{
-    background-size: cover;
+    background-size: cover; 
     height:700px;
+
   }
   #text{
     padding-top: 400px;
   }
-
+#service-img{
+  background-size: cover; 
+  height:750px;
+}
   @media screen and (max-width: 768px) {
 
     .hero-wrap {
@@ -166,15 +314,57 @@ body {
     .hero-wrap .slider-text{
       height: 100px; 
     }
-     
+
+    #about-img{
+      /* background-size: 600px; 
+      height:500px;
+      position: relative;
+      z-index: 0; */
+     margin-top: -90px;
+      margin-bottom: -120px;
+      background-size: 500px;
+      height:500px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+      z-index: -80;
+      overflow: hidden;
+
+    } 
+  
+     #service-img{
+      margin-top: -60px;
+      margin-bottom: -80px;
+      background-size: 550px;
+      height:300px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+      z-index: -120;
+      overflow: hidden;
+
+
+     }
   }
+
+
+  
+  #flaticon-space{
+    margin-top:-50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+  #flaticon-space{
+    margin-top:-60px;
+  }
+  }
+
   @media screen and (max-width: 768px) {
     #owl-carousel {
-      /* padding-top: 400px; */
       margin-top: -140px;
-      margin-bottom: 50px;
-   
-      background-size: 450px;
+      margin-bottom: -100px;
+      background-size: 500px;
       height:500px;
       background-repeat: no-repeat;
       background-position: center center;
@@ -183,6 +373,8 @@ body {
       overflow: hidden;
 
     }
+
+
     .hero-wrap .slider-text{
       height: 100px; 
     }
@@ -209,7 +401,26 @@ body {
     margin-top: -100px;
   }
 
-  @media screen and (max-width: 768px) {}
+  @media screen and (max-width: 768px) {
+    
+  #space1{
+    margin-top: -120px;
+  }
+ 
+  #welcome{
+    margin-bottom: -90px;
+  }
+  
+  #testimony-item{
+    margin-top:-70px;
+    margin-bottom: 0px;
+  }
+ 
+  #item-1{
+    margin-bottom: -220px;
+  }
+
+  }
 
   #pricing{
     margin-top: -90px;
@@ -241,7 +452,7 @@ body {
   @media screen and (max-width: 768px) {
     
   #pricing2{
-    margin-top: -220px;
+    margin-top: -150px;
     margin-bottom: 20px;
   }
   }
@@ -249,7 +460,18 @@ body {
     margin-top: -40px;
     /* margin-bottom: -120px; */
   }
-  @media screen and (max-width: 768px) {}
+  @media screen and (max-width: 768px) {
+    #footer-about{
+      margin-top: -100px;
+    }
+
+    #footer-map{
+      margin-top: -40px;
+      margin-bottom: -150px;
+    }
+    
+  
+  }
   #footer{
     margin-top: -60px;
     margin-bottom: -150px;
@@ -258,6 +480,12 @@ body {
     margin-top: -40px;
     margin-bottom: -80px;
   }
+  
+  #footer-about{
+    margin-top: -100px;
+  
+  }
+
   @media screen and (max-width: 768px) {}
 hr {
   -webkit-box-sizing: content-box;
@@ -9355,7 +9583,9 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+    
+      padding: 6em 0; 
+    } }
 
 .ftco-bg-dark {
   background: #3c312e; }
@@ -9525,8 +9755,16 @@ margin-right: 120px;
   font-size: 24px;
   font-weight: 700; }
   @media (max-width: 767.98px) {
+
+    .head-section{
+      margin-top: -20px;
+    }
+
     .heading-section h2 {
-      font-size: 28px; } }
+      font-size: 28px; }
+    
+    
+    }
 
 .heading-section.heading-section-white .subheading {
   color: #000000; }
@@ -9645,6 +9883,7 @@ margin-right: 120px;
     left: 20px;
     width: 40px;
     height: 40px;
+    /* overflow: hidden; */
     border-radius: 50%;
     background: #f79f24; }
     .testimony-wrap .icon span {
@@ -9672,6 +9911,35 @@ margin-right: 120px;
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in; 
+
+}
+
+.image-popup-bentley {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; 
+
+}
+
+.image-popup-audi {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; 
+
+}
+
+.image-popup-lexus {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; 
+
+}
+
+.image-popup-volks {
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; 
+
 }
 
 /* flaticon pop up */
@@ -9783,6 +10051,7 @@ margin-right: 120px;
 @media (max-width: 767.98px) {
   .blog-entry {
     margin-bottom: 30px; } }
+
 
 .blog-entry .text {
   position: relative;
@@ -9900,6 +10169,15 @@ margin-right: 120px;
 
 .contactForm .form-control {
   border: 2px solid rgba(0, 0, 0, 0.05) !important; }
+
+  
+  @media screen and (max-width: 768px) {
+    .translator{
+      font-size: 16px; 
+      padding-top: 5px;
+      margin-left: -10px;
+    }
+  }
 
 #map {
   height: 500px;
